@@ -1,0 +1,27 @@
+// Example of method overriding
+package com.prk;
+
+class Test7 {
+       void sum(int a, int b){
+           int res=a+b;
+           System.out.println("sum :"+res);
+       }
+    }
+class Test6 extends Test7{
+       void sum(int a, int b, int c){
+           int res=a+b+c;
+           System.out.println("sum is :"+res);
+       }
+       
+       public static void main(String[] args) {
+        Test6 obj = new Test6();
+        obj.sum(5, 5, 5);
+        obj.sum(5, 5);
+      
+    }
+}
+
+
+     
+
+
